@@ -5,7 +5,7 @@ This project demonstrates clean architecture, modular coding, error handling, an
 
 ---
 
-## 📂 Project Structure
+## Features
 
 - **Basic operations**: addition, subtraction, multiplication, division  
 - **Modular design**: separated into `calculation`, `calculator`, and `operation` packages  
