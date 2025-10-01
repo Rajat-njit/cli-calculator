@@ -44,12 +44,12 @@ Type 'exit' to quit.
 ```
 
 ## 6. Running Tests
--- **Run tests locally:**
+- **Run tests locally:**
 ```bash
 pytest
 ```
 
--- **Run tests locally:**
+- **Run tests locally:**
 ```bash
 pytest --cov=app
 ```
@@ -70,17 +70,18 @@ pytest --cov=app
 **6. If tests or coverage fail, the workflow fails.**
 
 ## Key Takeaways
--- **Practiced clean, modular Python design**
+- **Practiced clean, modular Python design**
 
--- **Learned error handling in real applications**
+- **Learned error handling in real applications**
 
--- **Gained experience with pytest & coverage reports**
+- **Gained experience with pytest & coverage reports**
 
--- **Integrated CI/CD pipelines via GitHub Actions**
+- **Integrated CI/CD pipelines via GitHub Actions**
 
--- **Built a project that’s extensible (easy to add power, square root, etc.)**
+- **Built a project that’s extensible (easy to add power, square root, etc.)**
 
 ## Author
 **Rajat Pednekar**
+
 **Assignment 4 - CLI Calculator Project**
 **NJIT**
