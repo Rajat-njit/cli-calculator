@@ -28,29 +28,11 @@ class Calculation(ABC):
     a consistent interface that all calculation types (such as addition, subtraction, etc.) 
     must follow. 
     
-    Why Use an Abstract Base Class?
-    - **Abstraction**: By using an ABC, we focus on "what" calculations need to do (execute an operation) 
-      rather than "how" each specific operation is implemented. This simplifies our design.
-    - **Polymorphism**: By providing a standard interface, any Calculation subclass can be used 
-      interchangeably, allowing the program to treat each type of calculation in a consistent manner.
-    - **Enforcing Consistency**: The abstract `execute` method enforces that all subclasses implement 
-      their own specific version of the calculation logic, making sure that each type of calculation 
-      has an `execute` method.
     """
 
     def __init__(self, a: float, b: float) -> None:
         """
         Initializes a Calculation instance with two operands (numbers involved in the calculation).
-        
-        **Why Have an Initializer?**
-        - This initializer method ensures that each Calculation object will have two numbers (`a` and `b`) 
-          to work with, no matter the specific type of calculation.
-        - Encapsulating the operands within an instance allows each Calculation object to maintain its own 
-          state (values of `a` and `b`), supporting **Object-Oriented Design** principles.
-
-        **Parameters:**
-        - `a (float)`: The first operand.
-        - `b (float)`: The second operand.
         """
         self.a: float = a  # Stores the first operand as a floating-point number.
         self.b: float = b  # Stores the second operand as a floating-point number.
@@ -60,16 +42,6 @@ class Calculation(ABC):
         """
         Abstract method to perform the calculation. Subclasses will provide specific 
         implementations of this method, defining the arithmetic for each operation.
-
-        **Why Use an Abstract Method?**
-        - Enforces that each subclass provides its own specific version of `execute`, 
-          which is crucial for following the interface defined by Calculation.
-        - Abstract methods define "must-have" methods for subclasses. By including `execute` here, 
-          we ensure that any class inheriting from Calculation will have this method, making 
-          it easier to work with multiple types of calculations in a flexible way.
-        
-        **Returns:**
-        - `float`: The result of the calculation.
         """
         pass  # The actual implementation will be provided by the subclass. # pragma: no cover
 
