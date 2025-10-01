@@ -22,3 +22,9 @@ This project demonstrates clean architecture, modular coding, error handling, an
 ```bash
 git clone https://github.com/Rajat-njit/cli-calculator.git
 cd cli-calculator
+
+## 2. Create Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate    # macOS/Linux
+venv\Scripts\activate       # Windows
